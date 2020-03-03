@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		2CE5EA40240E90AE0052CE12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5EA3F240E90AE0052CE12 /* AppDelegate.swift */; };
 		2CE5EA42240E90AE0052CE12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5EA41240E90AE0052CE12 /* SceneDelegate.swift */; };
-		2CE5EA44240E90AE0052CE12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5EA43240E90AE0052CE12 /* ViewController.swift */; };
 		2CE5EA47240E90AE0052CE12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE5EA45240E90AE0052CE12 /* Main.storyboard */; };
 		2CE5EA49240E90B00052CE12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE5EA48240E90B00052CE12 /* Assets.xcassets */; };
 		2CE5EA4C240E90B00052CE12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE5EA4A240E90B00052CE12 /* LaunchScreen.storyboard */; };
+		2CE5EA54240EA1EC0052CE12 /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5EA53240EA1EC0052CE12 /* FirstScreenViewController.swift */; };
+		2CE5EA56240EA1FF0052CE12 /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5EA55240EA1FF0052CE12 /* SecondScreenViewController.swift */; };
+		2CE5EA58240EA23F0052CE12 /* ThirdScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5EA57240EA23E0052CE12 /* ThirdScreenViewController.swift */; };
+		2CE5EA5F240EAAD50052CE12 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5EA5E240EAAD50052CE12 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2CE5EA3C240E90AE0052CE12 /* BaseViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE5EA3F240E90AE0052CE12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CE5EA41240E90AE0052CE12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2CE5EA43240E90AE0052CE12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2CE5EA46240E90AE0052CE12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CE5EA48240E90B00052CE12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CE5EA4B240E90B00052CE12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CE5EA4D240E90B00052CE12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CE5EA53240EA1EC0052CE12 /* FirstScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenViewController.swift; sourceTree = "<group>"; };
+		2CE5EA55240EA1FF0052CE12 /* SecondScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenViewController.swift; sourceTree = "<group>"; };
+		2CE5EA57240EA23E0052CE12 /* ThirdScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreenViewController.swift; sourceTree = "<group>"; };
+		2CE5EA5E240EAAD50052CE12 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		2CE5EA3E240E90AE0052CE12 /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
-				2CE5EA3F240E90AE0052CE12 /* AppDelegate.swift */,
-				2CE5EA41240E90AE0052CE12 /* SceneDelegate.swift */,
-				2CE5EA43240E90AE0052CE12 /* ViewController.swift */,
+				2CE5EA5D240EA6840052CE12 /* Support */,
 				2CE5EA45240E90AE0052CE12 /* Main.storyboard */,
 				2CE5EA48240E90B00052CE12 /* Assets.xcassets */,
 				2CE5EA4A240E90B00052CE12 /* LaunchScreen.storyboard */,
 				2CE5EA4D240E90B00052CE12 /* Info.plist */,
+				2CE5EA60240EAAE70052CE12 /* View Controllers */,
 			);
 			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		2CE5EA5D240EA6840052CE12 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				2CE5EA3F240E90AE0052CE12 /* AppDelegate.swift */,
+				2CE5EA41240E90AE0052CE12 /* SceneDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		2CE5EA60240EAAE70052CE12 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2CE5EA61240EAAF20052CE12 /* Base */,
+				2CE5EA53240EA1EC0052CE12 /* FirstScreenViewController.swift */,
+				2CE5EA55240EA1FF0052CE12 /* SecondScreenViewController.swift */,
+				2CE5EA57240EA23E0052CE12 /* ThirdScreenViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2CE5EA61240EAAF20052CE12 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2CE5EA5E240EAAD50052CE12 /* BaseViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CE5EA44240E90AE0052CE12 /* ViewController.swift in Sources */,
+				2CE5EA56240EA1FF0052CE12 /* SecondScreenViewController.swift in Sources */,
+				2CE5EA58240EA23F0052CE12 /* ThirdScreenViewController.swift in Sources */,
 				2CE5EA40240E90AE0052CE12 /* AppDelegate.swift in Sources */,
+				2CE5EA54240EA1EC0052CE12 /* FirstScreenViewController.swift in Sources */,
 				2CE5EA42240E90AE0052CE12 /* SceneDelegate.swift in Sources */,
+				2CE5EA5F240EAAD50052CE12 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SecondScreenViewController.swift
 //  BaseViewController
 //
 //  Created by Jose Alberto Ruíz-Carrillo González on 03/03/2020.
@@ -8,13 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SecondScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
-
