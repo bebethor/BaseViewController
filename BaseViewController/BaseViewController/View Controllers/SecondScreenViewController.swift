@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondScreenViewController: UIViewController {
+class SecondScreenViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

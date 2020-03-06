@@ -8,21 +8,27 @@
 
 import UIKit
 
+protocol BaseViewControllerDelegate {
+    func actionButtonTapped()
+}
+
 class BaseViewController: UIViewController {
 
+    var button = UIButton()
     var backgroundImageView = UIImageView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.isNavigationBarHidden = true
-        setBackground()
+        configureBackground()
+        configureButton()
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         .lightContent
     }
     
-    func setBackground() {
+    func configureBackground() {
         backgroundImageView.image       = UIImage(named: "base-background")
         backgroundImageView.contentMode = .scaleToFill
         view.addSubview(backgroundImageView)
@@ -35,5 +41,24 @@ class BaseViewController: UIViewController {
             backgroundImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
+    }
+    
+    func configureButton() {
+        view.addSubview(button)
+        button.addTarget(self, action: #selector(actionButtonPressed), for: .touchUpInside)
+        button.backgroundColor = .systemPink
+        button.setTitle("Action Button", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.layer.cornerRadius = 10
+        NSLayoutConstraint.activate([
+            button.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20),
+            button.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            button.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            button.heightAnchor.constraint(equalToConstant: 45)
+        ])
+    }
+    
+    @objc func actionButtonPressed() {
+        
     }
 }
